@@ -1,6 +1,7 @@
+"use strict";
 //unknown은 any랑은 다르다
 // 좀 더 제한적이기 때문에 any보다는 더 나은 선택일 수 있다.
-var userInput; //무엇을 입력할지 모른다.
+let userInput; //무엇을 입력할지 모른다.
 //무엇을 입력할지 모르기 때문에 무엇이든 입력할 수 있다.
 userInput = 5;
 userInput = "dfdf";

@@ -1,4 +1,5 @@
-var person = {
+"use strict";
+const person = {
     name: "bella",
     age: 32,
     hobbies: ["sports", "cooking"],
@@ -7,7 +8,7 @@ var person = {
 //튜플의 경우 자스에는 없지만 타스에는 있는 타입이기 때문에 항상 타입을 명시해주어야 한다.
 //튜플의 첫번째 요소는 숫자, 두번째 요소는 문자열이다
 //배열에 정확하게 x개의 값이 필요하고 각 값의 타입을 미리 지정해두어야 할 때 사용한다.
-var person1 = {
+const person1 = {
     name: "bella",
     age: 32,
     hobbies: ["sports", "cooking"],
@@ -19,8 +20,7 @@ var person1 = {
 // 명시해주지 않아도 괜찮다.
 console.log(person);
 console.log(person1);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
+for (const hobby of person.hobbies) {
     console.log(hobby);
     //이 경우 person.hobbies가 문자열로 이루어진 배열이기때문에 자동으로 hobby를 문자열로 추론한다.
 }
@@ -37,7 +37,7 @@ var Role;
     Role[Role["AUTHOR"] = 2] = "AUTHOR";
 })(Role || (Role = {}));
 ;
-var person2 = {
+const person2 = {
     name: "bella",
     age: 32,
     hobbies: ["sports", "cooking"],
